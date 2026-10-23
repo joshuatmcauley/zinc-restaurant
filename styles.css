@@ -269,10 +269,7 @@ h3 { font-size: 21px; letter-spacing: -0.015em; }
 }
 .dish .desc { margin-top: 6px; font-size: 15.5px; color: var(--mute); }
 
-.gallery-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 28px; }
-.gallery-grid .dish figcaption { margin-top: 12px; }
-.gallery-grid .dish .name { font-size: 18px; }
-.gallery-grid .dish .desc { font-size: 14.5px; }
+.gallery-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 32px; }
 
 .section-foot { margin-top: 48px; }
 
@@ -520,3 +517,26 @@ h3 { font-size: 21px; letter-spacing: -0.015em; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---------- Light sections ----------
+   White breaks up the black and green. Re-pointing the colour tokens means
+   everything inside (text, buttons, cards, rules) follows without extra rules. */
+.light {
+  --ink-2: #F0F3EC;
+  --snow: #0A0B0A;
+  --mute: #55604F;
+  --line: #CDD3C6;
+  --line-soft: #DDE2D7;
+  --green: #17850F;
+  background: #FFFFFF;
+  color: #0A0B0A;
+}
+.light .btn-primary { background: #35DF32; color: #0A0B0A; }
+.light .btn-primary:hover { background: #4CEA49; color: #0A0B0A; }
+.light .btn-outline { border-color: #0A0B0A; }
+.light .btn-outline:hover { background: #0A0B0A; border-color: #0A0B0A; color: #FFFFFF; }
+.light .price-tag { background: #0A0B0A; border-color: #0A0B0A; }
+.light .price-tag .amount { color: #35DF32; }
+.light .price-tag .what { color: #D7DCD4; }
+.light .callout { border-left-color: #35DF32; }
+.light .dish img { box-shadow: 0 6px 22px rgba(10, 11, 10, .14); }
