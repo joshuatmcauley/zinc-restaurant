@@ -1,0 +1,11 @@
+// Cloudflare settings for the Zinc Restaurant website.
+// This is a static site: there is no Worker, the files are served as they are.
+{
+  "name": "zinc-restaurant",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  },
+  "observability": { "enabled": true }
+}

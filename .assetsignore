@@ -1,0 +1,10 @@
+# Files that belong to the repo, not to the public website
+node_modules
+.wrangler
+wrangler.jsonc
+package.json
+package-lock.json
+README.md
+.git
+.gitignore
+.assetsignore
