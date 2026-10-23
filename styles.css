@@ -269,6 +269,11 @@ h3 { font-size: 21px; letter-spacing: -0.015em; }
 }
 .dish .desc { margin-top: 6px; font-size: 15.5px; color: var(--mute); }
 
+.gallery-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 28px; }
+.gallery-grid .dish figcaption { margin-top: 12px; }
+.gallery-grid .dish .name { font-size: 18px; }
+.gallery-grid .dish .desc { font-size: 14.5px; }
+
 .section-foot { margin-top: 48px; }
 
 /* ---------- Banded feature (Sunday lunch, teatime) ---------- */
